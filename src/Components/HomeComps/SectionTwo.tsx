@@ -1,4 +1,5 @@
 import React from 'react'
+import imgOne from "../../assets/Images/SecThree/image-one.jpg";
 
 export const SectionTwo = () => {
     const supports = [
@@ -20,11 +21,30 @@ export const SectionTwo = () => {
     ];
 
     return (
-        <div className="h-10">
-            <ul className='flex gap-2'>
+        <div className="py-20 px-32">
+            <ul className='flex gap-0.5 w-full flex-nowrap justify-center'>
                 {supports.map((support) => (
-                    <li key={support.id}>
-                        {support.title}
+                    <li className='relative flex-1 h-[300px] group mb-28'
+                        key={support.id
+                        }>
+                        <img src={imgOne} alt={support.title + "image"} className='w-full h-full' />
+                        <div className="hidden bg-blue-800 bg-opacity-40 absolute top-0 left-0 h-full w-full z-10 group-hover:inline-block duration-500 ease-in-out transition-all transform"></div>
+                        <div className='absolute z-10 w-[90%] h-full top-56 left-[24px] bg-white flex flex-col gap-10 justify-center items-center text-center p-8 group-hover:top-44 duration-500 ease-in-out transition-all transform cursor-pointer'>
+                            <div className='flex flex-col gap-6'>
+                                <h2 className='capitalize text-green-800 font-bold text-[32px]'>
+                                    {support.title}
+                                </h2>
+                                <p className='text-base font-semibold'>
+                                    {support.description}
+                                </p>
+                            </div>
+                            <button className='text-orange-700 font-bold text-xl uppercase'>
+                                Learn More
+                            </button>
+                        </div>
+                        <div className='absolute w-full z-10 bg-white h-10 -bottom-52'>
+
+                        </div>
                     </li>
                 ))}
             </ul>
