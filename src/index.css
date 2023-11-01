@@ -5,7 +5,7 @@ body {
 }
 
 .middle {
-  @apply before:bg-blue-700  transition duration-500 ease-in-out;
+  @apply before:bg-orange-700  transition duration-500 ease-in-out;
 }
 
 @tailwind components;
