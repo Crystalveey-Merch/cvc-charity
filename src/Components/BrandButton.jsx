@@ -1,16 +1,9 @@
-import React from 'react';
 
-type ButtonProps = {
-    onClick: undefined | (() => void);
-    label: string | React.ReactNode;
-    disabled?: boolean;
-    className?: string;
-    type?: 'button' | 'submit' | 'reset';
-};
+import PropTypes from 'prop-types';
 
-export const BrandButton: React.FC<ButtonProps> = ({
-    onClick,
-    label,
+export const BrandButton = ({
+    onClick = undefined,
+    label = '',
     disabled = false,
     className = '',
     type = 'button',
@@ -25,4 +18,12 @@ export const BrandButton: React.FC<ButtonProps> = ({
             {label}
         </button>
     );
+};
+
+BrandButton.propTypes = {
+    onClick: PropTypes.func,
+    label: PropTypes.string,
+    disabled: PropTypes.bool,
+    className: PropTypes.string,
+    type: PropTypes.string,
 };

@@ -1,4 +1,3 @@
-import React from "react";
 import { BrandButton } from "../BrandButton";
 import imgOne from "../../assets/Images/SecThree/image-one.jpg";
 import imgTwo from "../../assets/Images/SecThree/image-two.jpg";
@@ -26,7 +25,7 @@ export const SectionThree = () => {
                             When young people want to tell their story, we listen. These young people still believe in a better tomorrow. They know they can break free from those who hurt them, have a happy home life, feel better over time.
                         </p>
                         <p>
-                            Often their stories aren't easy to tell, but they tell them. Because they know sharing their story will help them and others like them.
+                            Often their stories aren&rsquo;t easy to tell, but they tell them. Because they know sharing their story will help them and others like them.
                         </p>
                     </div>
                     <BrandButton

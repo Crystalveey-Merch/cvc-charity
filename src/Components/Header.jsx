@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { BrandButton } from "./";
+import  { useEffect } from "react";
+import { BrandButton } from ".";
 
-export const Header = ({isFixed, setIsFixed}) => {
+export const Header = (isFixed, setIsFixed) => {
 
 
     useEffect(() => {
@@ -18,7 +18,7 @@ export const Header = ({isFixed, setIsFixed}) => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [setIsFixed]);
 
     return (
         <div className={`z-20 bg-white w-full px-12 py-6 flex justify-between items-center shadow-md ${isFixed ? 'fixed top-0 left-0 transition-all duration-300 ease-in-out' : ''}`}>

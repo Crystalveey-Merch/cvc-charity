@@ -1,7 +1,6 @@
-import React from 'react'
 import imgOne from "../../assets/Images/SecThree/image-one.jpg";
 
-export const SectionTwo = () => {
+export const SectionOne = () => {
     const supports = [
         {
             id: 1,
