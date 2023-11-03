@@ -1,3 +1,12 @@
+import donateHeartSVG from "../../assets/SVG/donate-heart.svg";
+//import showKindnessSVG from "../../assets/SVG/volunteer-kindness-care-heart-love.svg";
+import volunteerSVG from "../../assets/SVG/hand-yes-volunteer-fingers.svg";
+import partnershipSVG from "../../assets/SVG/business-partnership.svg";
+import trustSVG from "../../assets/SVG/real-estate-investment.svg";
+import fundRaiseSVG from "../../assets/SVG/bank.svg";
+
+
+
 export const SectionFour = () => {
   const waysToSupport = [
     {
@@ -29,7 +38,9 @@ export const SectionFour = () => {
       <ul className="flex gap-4 items-center">
         {waysToSupport.map((support) => (
           <li key={support.id} className="flex flex-col gap-2 items-center w-[120px] text-center">
-            <div className="bg-orange-300 w-20 h-20 rounded-full flex justify-center items-center shadow-xl"></div>
+            <div className="bg-orange-300 w-20 h-20 rounded-full flex justify-center items-center shadow-xl">
+              <img src={support.id === 1 ? donateHeartSVG : support.id === 2 ? volunteerSVG : support.id === 3 ? fundRaiseSVG : support.id === 4 ? partnershipSVG : trustSVG} alt="support" className="w-10 h-10" />
+            </div>
             <p className="text-white text-base font-semibold capitalize">
               {support.title}
             </p>
