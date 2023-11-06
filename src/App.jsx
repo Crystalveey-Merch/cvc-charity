@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Header } from "./Components";
+import { Header, Footer } from "./Components";
 import { Home } from "./Pages";
 import "./App.css";
 import { useState } from "react";
@@ -14,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }
