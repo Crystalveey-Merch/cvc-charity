@@ -18,3 +18,35 @@ body{
 .support-font{
   font-family: 'Rye', serif;
 }
+
+.harburger-top,
+.harburger-middle,
+.harburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  transform: translate(0px);
+  transition: all 0.5s;
+}
+.harburger-middle {
+  transform: translateY(7px);
+}
+.harburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+.open .harburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .harburger-middle {
+  display: none;
+}
+.open .harburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
