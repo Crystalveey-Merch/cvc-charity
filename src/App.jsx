@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./Components";
-import { Home } from "./Pages";
+import { Home, SupportUs } from "./Pages";
 import "./App.css";
 import { useState } from "react";
 
@@ -12,6 +12,7 @@ function App() {
       <div className={` ${isFixed ? "mt-44" : ""}`}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/support-us" element={<SupportUs />} />
         </Routes>
       </div>
       <Footer />

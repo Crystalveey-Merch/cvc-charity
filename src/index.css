@@ -11,12 +11,12 @@ body {
 @tailwind components;
 @tailwind utilities;
 
-body{
-  font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.support-font{
-  font-family: 'Rye', serif;
+.support-font {
+  font-family: "Rye", serif;
 }
 
 .harburger-top,
@@ -50,3 +50,33 @@ body{
 .open .harburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+@media screen and (max-width: 767px) {
+  .header-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-120%);
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    /* background-color: rgba(22, 28, 36, 0.8); */
+    /* rgba(0, 0, 0, 0.4) */
+    /* padding-left: 15%; */
+    /* padding-right: 15%; */
+    /* padding-top: 10px; */
+    /* padding-bottom: 20%; */
+    margin-top: 71px;
+  }
+
+  .header-links.open {
+    transform: translateY(0);
+  }
+}
+
+body.is-side-menu-open {
+  overflow: hidden;
+}
+

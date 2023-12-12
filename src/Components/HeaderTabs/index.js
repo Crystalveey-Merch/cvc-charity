@@ -1,2 +1,2 @@
-export * from "./Home"
+export * from "./Default"
 export * from "./SupportUs"
