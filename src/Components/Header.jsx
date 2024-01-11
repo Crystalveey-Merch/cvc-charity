@@ -64,11 +64,13 @@ export const Header = (isFixed, setIsFixed) => {
           : ""
       }`}
     >
-      <BrandButton
-        className="hidden w-52 py-3 xl:w-44 xl:py-2.5 lg:w-40 lg:text-sm md:w-max md:px-4 md:py-2 md:block"
-        onClick={undefined}
-        label="Donate"
-      />
+      <Link to="/support-us/donate" className="hidden md:block">
+        <BrandButton
+          className="hidden w-52 py-3 xl:w-44 xl:py-2.5 lg:w-40 lg:text-sm md:w-max md:px-4 md:py-2 md:block"
+          onClick={undefined}
+          label="Donate"
+        />
+      </Link>
       <div>
         <Link
           to="/"
