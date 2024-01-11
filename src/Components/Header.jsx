@@ -123,7 +123,9 @@ export const Header = (isFixed, setIsFixed) => {
                 onClick={() => setSupportOpen(false)}
                 className="group flex gap-1.5 items-center text-[#000000] transition duration-500 ease-in-out hover:text-orange-700"
               >
-                <h4 className="font-bold text-4xl lg:text-2xl lg:w-max">Support us</h4>
+                <h4 className="font-bold text-4xl lg:text-2xl lg:w-max">
+                  Support us
+                </h4>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -142,7 +144,7 @@ export const Header = (isFixed, setIsFixed) => {
               {/* List of support ways e.g donation, volunteer e.t.c */}
               <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-16 xl:gap-y-6 xl:gap-x-8 lg:flex lg:flex-wrap">
                 <Link
-                  href="/support/donate"
+                  to="/support-us/donate"
                   className="group flex gap-1 items-center transition duration-500 ease-in-out text-orange-700"
                 >
                   <p className="text-[#000000] text-lg font-semibold group-hover:text-orange-700 lg:text-base">
@@ -285,11 +287,13 @@ export const Header = (isFixed, setIsFixed) => {
         </li>
       </ul>
       <div className="flex gap-10 items-center">
-        <BrandButton
-          className="w-52 py-3 xl:w-44 xl:py-2.5 lg:w-40 lg:text-sm md:w-max md:px-4 md:py-2 md:hidden"
-          onClick={undefined}
-          label="Donate Now"
-        />
+        <Link to="/support-us/donate">
+          <BrandButton
+            className="w-52 py-3 xl:w-44 xl:py-2.5 lg:w-40 lg:text-sm md:w-max md:px-4 md:py-2 md:hidden"
+            onClick={undefined}
+            label="Donate Now"
+          />
+        </Link>
         <button
           id="menu-btn"
           onClick={handleMenu}

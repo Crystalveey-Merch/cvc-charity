@@ -19,6 +19,19 @@ body {
   font-family: "Rye", serif;
 }
 
+.font-finger-paint {
+  font-family: 'Finger Paint', sans-serif;
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-shadows {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+
 .harburger-top,
 .harburger-middle,
 .harburger-bottom {
