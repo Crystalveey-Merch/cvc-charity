@@ -124,6 +124,7 @@ export const PaymentForm = ({
                   <p className="text-sm text-gray-700">Pay with PayStack</p>
                 </label>
               </div>
+              {purchaseData.donateType === "one-off" && (
               <div className="flex flex-col gap-10 w-full border border-gray-300 rounded-md p-4">
                 <div className="flex gap-4 items-center ">
                   <input
@@ -220,6 +221,7 @@ export const PaymentForm = ({
                   </p>
                 </div>
               </div>
+              )}
               {/* terms */}
               <div className="flex items-center gap-2">
                 <input

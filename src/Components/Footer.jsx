@@ -62,10 +62,10 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="lg:w-5/12 lg:order-2 sm:w-full">
+                {/* <div className="lg:w-5/12 lg:order-2 sm:w-full">
                     <h4 className=" text-white text-base font-semibold ">Follow Us</h4>
                     <p></p>
-                </div>
+                </div> */}
             </div>
             <div className=" border-gray-100 pt-6 text-center">
                 <p className="text-white font-semibold base">

@@ -35,26 +35,26 @@ export const Donate = () => {
 
   //  price in dollars
   const oneOFFOptions = [
-    { id: 1, symbol: "$", price: 10 },
-    { id: 2, symbol: "$", price: 20 },
-    { id: 3, symbol: "$", price: 50 },
-    { id: 4, symbol: "$", price: 100 },
-    { id: 6, symbol: "$", price: 500 },
-    { id: 7, symbol: "$", price: 1000 },
-    { id: 9, symbol: "$", price: 5000 },
-    { id: 10, symbol: "$", price: 10000 },
+    { id: 1, symbol: "₦", price: 1000 },
+    { id: 2, symbol: "₦", price: 2000 },
+    { id: 3, symbol: "₦", price: 5000 },
+    { id: 4, symbol: "₦", price: 10000 },
+    { id: 6, symbol: "₦", price: 50000 },
+    { id: 7, symbol: "₦", price: 100000 },
+    { id: 9, symbol: "₦", price: 500000 },
+    { id: 10, symbol: "₦", price: 1000000 },
   ];
 
   //  price in dollars
   const monthlyOptions = [
-    { id: 1, symbol: "$", price: 10 },
-    { id: 2, symbol: "$", price: 20 },
-    { id: 3, symbol: "$", price: 50 },
-    { id: 4, symbol: "$", price: 100 },
-    { id: 5, symbol: "$", price: 200 },
-    { id: 6, symbol: "$", price: 500 },
-    { id: 7, symbol: "$", price: 1000 },
-    { id: 8, symbol: "$", price: 2000 },
+    { id: 1, symbol: "₦", price: 1000 },
+    { id: 2, symbol: "₦", price: 2000 },
+    { id: 3, symbol: "₦", price: 5000 },
+    { id: 4, symbol: "₦", price: 10000 },
+    { id: 5, symbol: "₦", price: 20000 },
+    { id: 6, symbol: "₦", price: 50000 },
+    { id: 7, symbol: "₦", price: 100000 },
+    { id: 8, symbol: "₦", price: 200000 },
   ];
 
   const [donateAnonymously, setDonateAnonymously] = useState(false);
@@ -63,8 +63,8 @@ export const Donate = () => {
     name: "donation",
     price: donateAmount,
     type: donateType,
-    currency: "USD",
-    symbol: "$",
+    currency: "NGN",
+    symbol: "₦",
   };
 
   return (
@@ -128,13 +128,20 @@ export const Donate = () => {
           className="text-left text-lg font-normal w-[850px] inline-flex flex-col gap-3 lg:w-full md:text-base"
           style={{ lineHeight: "1.9" }}
         >
-          We&rsquo;ve been helping young people for over 15 years. But we
+          We&rsquo;ve been helping young people for over 9 years. But we
           can&rsquo;t do it alone. We need your support. Thank you for choosing
           to support us. Your donation will help us be there for children who
           feel they have no one else to turn to.
         </p>
-        <Element name="donate">
-          <div className="w-full max-w-2xl flex flex-col justify-center justify-items-center gap-6 md:w-full">
+        <Element name="donate" className="flex flex-col justify-center">
+          {/* <div className="flex place-self-center w-[80vw]">
+            <div className="bg-orange-600 text-white flex flex-col gap-5 w-1/2 p-8">
+              <h2 className="text-5xl font-bold">
+                Make a <span className="text-yellow-300">donation</span>
+              </h2>
+            </div>
+          </div> */}
+          <div className="w-full max-w-2xl flex flex-col justify-center justify-items-center place-self-center gap-6 md:w-full">
             <p className="max-w-md font-shadows place-self-center text-orange-600 text-2xl font-bold sm:w-full">
               You can choose to make a one-off donation or set up a regular
               gift.
