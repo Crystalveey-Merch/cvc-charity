@@ -1,13 +1,23 @@
 /* eslint-disable react/prop-types */
 //import { Link } from "react-router-dom";
 
-export const Default = ({ setCurrentTab }) => {
+import { Link } from "react-router-dom";
+
+export const Default = ({ handleMenu, setCurrentTab }) => {
   return (
     <div className="h-full bg-white flex flex-col gap-2.5 py-3.5 px-3">
       <div className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300">
-        <p className="text-black font-semibold text-sm capitalize">
-          Our work and impact
-        </p>
+        <Link
+          to="/our-work-and-impact"
+          onClick={() => {
+            handleMenu();
+            window.scrollTo(0, 0);
+          }}
+        >
+          <p className="text-black font-semibold text-sm capitalize">
+            Our work and impact
+          </p>
+        </Link>
       </div>
       <div className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300">
         <p className="text-black font-semibold text-sm capitalize">

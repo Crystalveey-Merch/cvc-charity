@@ -6,7 +6,7 @@ import whatsappSVG from "../../assets/Socials/whatsapp.svg";
 
 export const SubscribeSec = () => {
   return (
-    <div className="px-24 py-6 pt-6 flex gap-6 bgorange-800 xl:px-10 lg:flex-col md:px-6">
+    <div className="px-24 py-6 pt-6 flex gap-6 bgorange-800 xl:px-10 lg:flex-col md:px-3 sm:py-0 sm:pt-0 sm:gap-0 sm:px-0">
       <form
         action="https://api.smtprelay.co/contact/add?version=2"
         data-id="ThKXbMPLch"
@@ -134,28 +134,28 @@ export const SubscribeSec = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={twitterSVG} alt="twitter" className="w-16 h-16" />
+            <img src={twitterSVG} alt="twitter" className="w-16 h-16 sm:h-14 sm:w-14" />
           </a>
           <a
             href=""
             target="_blank"
             rel="noreferrer"
           >
-            <img src={facebookSVG} alt="facebook" className="w-16 h-16" />
+            <img src={facebookSVG} alt="facebook" className="w-16 h-16 sm:h-14 sm:w-14" />
           </a>
           <a
             href=""
             target="_blank"
             rel="noreferrer"
           >
-            <img src={instagramSVG} alt="instagram" className="w-16 h-16" />
+            <img src={instagramSVG} alt="instagram" className="w-16 h-16 sm:h-14 sm:w-14" />
           </a>
           <a
             href=""
             target="_blank"
             rel="noreferrer"
           >
-            <img src={whatsappSVG} alt="whatsapp" className="w-16 h-16" />
+            <img src={whatsappSVG} alt="whatsapp" className="w-16 h-16 sm:h-14 sm:w-14" />
           </a>
         </div>
       </div>

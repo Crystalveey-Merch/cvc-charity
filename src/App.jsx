@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./Components";
-import { Home, SupportUs } from "./Pages";
+import { Home, SupportUs, OurWorkAndImpact } from "./Pages";
 import { Contact } from "./Pages/Contact";
 import { Contact2 } from "./Pages/Contact2";
 import { Donate } from "./Pages/support-us";
@@ -20,6 +20,7 @@ function App() {
           <Route path="/support-us/donate" element={<Donate />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact2" element={<Contact2 />} />
+          <Route path="/our-work-and-impact" element={<OurWorkAndImpact />} />
         </Routes>
       </div>
       <SubscribeSec />

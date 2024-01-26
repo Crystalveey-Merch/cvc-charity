@@ -74,15 +74,19 @@ export const Header = (isFixed, setIsFixed) => {
       <div>
         <Link
           to="/"
+          // scroll to top
+          onClick={() => window.scrollTo(0, 0)}
           className="font-bold text-3xl text-orange-800 xl:text-2xl lg:text-xl"
         >
           CVC Charity
         </Link>
       </div>
       <ul className="flex gap-6 xl:gap-5 lg:gap-3.5 md:hidden">
-        <li className="text-[#000000] font-semibold text-base capitalize xl:text-sm lg:text-xs">
-          Our work and impact
-        </li>
+        <Link to={"/our-work-and-impact"} onClick={() => window.scrollTo(0, 0)}>
+          <li className="text-[#000000] font-semibold text-base capitalize xl:text-sm lg:text-xs">
+            Our work and impact
+          </li>
+        </Link>
         <li className="text-[#000000] font-semibold text-base capitalize xl:text-sm lg:text-xs">
           How we can help
         </li>
@@ -315,7 +319,7 @@ export const Header = (isFixed, setIsFixed) => {
         }}
       >
         {currentTab === "default" ? (
-          <Default setCurrentTab={setCurrentTab} />
+          <Default handleMenu={handleMenu} setCurrentTab={setCurrentTab} />
         ) : currentTab === "support" ? (
           <SupportUs handleMenu={handleMenu} setCurrentTab={setCurrentTab} />
         ) : null}
