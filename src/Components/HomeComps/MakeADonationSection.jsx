@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import imgThree from "../../assets/Images/Donate/donate.jpg";
+import imgThree from "../../assets/Images/SecTwo/five.jpg";
 
 export const MakeADonationSection = () => {
   const [donateType, setDonateType] = useState("monthly");

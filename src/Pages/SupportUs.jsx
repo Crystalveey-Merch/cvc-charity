@@ -1,7 +1,8 @@
-import imgOne from "../assets/Images/SecThree/image-one.jpg";
-import imgTwo from "../assets/Images/SecThree/image-two.jpg";
-import imgThree from "../assets/Images/SecThree/image-three.jpg";
-import imgFour from "../assets/Images/SecThree/image-four.jpg";
+import imgOne from "../assets/Images/SecTwo/one.jpg";
+import imgTwo from "../assets/Images/SecTwo/two.jpg";
+import imgThree from "../assets/Images/SecTwo/three.jpg";
+import imgFour from "../assets/Images/SecTwo/four.jpg";
+import imgFive from "../assets/Images/SecTwo/five.jpg";
 import { Link } from "react-router-dom";
 
 export const SupportUs = () => {
@@ -12,7 +13,7 @@ export const SupportUs = () => {
       //   short description
       description:
         "Join us in our mission to help young people. We rely on your donations to help us support young people. ",
-      img: imgOne,
+      img: imgFive,
       url: "/support-us/donate",
     },
     {
@@ -52,7 +53,9 @@ export const SupportUs = () => {
   return (
     <div className="mt-24 py-20 flex flex-col gap-20 sm:px-6">
       <div className="flex flex-col justify-center items-center gap-7">
-        <h1 className="text-7xl font-extrabold text-center lg:text-[3.5rem] sm:text-5xl">Support us</h1>
+        <h1 className="text-7xl font-extrabold text-center lg:text-[3.5rem] sm:text-5xl">
+          Support us
+        </h1>
         <p className="text-center text-lg font-normal w-[600px] md:text-base sm:max-w-[430px] sm:w-full">
           We&rsquo;ve been helping young people for over 15 years. But we
           can&rsquo;t do it alone. We need your support.
@@ -61,7 +64,7 @@ export const SupportUs = () => {
       <div className="flex flex-col gap-12 justify-center items-center">
         {/* first support */}
         <div className="flex gap-12 sm:hidden">
-          <Link to={support[0].url}>
+          <Link to={support[0].url} onClick={() => window.scrollTo(0, 0)}>
             <div className="group relative flex w-[750px] h-[450px] rounded-xl bg-[#fdd97d] overflow-hidden xl:w-[600px] xl:h-[380px] lg:w-[660px] lg:h-[330px] md:w-[600px] sm:w-full">
               <div
                 className="w-full flex justify-center items-center flex-grow bg-[#fdd97d] rounded-l-xl z-10 lg:w-[300px]"
@@ -90,7 +93,11 @@ export const SupportUs = () => {
             </div>
           </Link>
           {/* 2nd support */}
-          <Link to={support[1].url} className="block lg:hidden">
+          <Link
+            to={support[1].url}
+            onClick={() => window.scrollTo(0, 0)}
+            className="block lg:hidden"
+          >
             <div className="group w-[350px] h-[450px] bg-gray-50 rounded-xl overflow-hidden xl:w-[280px] xl:h-[380px]">
               <img
                 src={support[1].img}
@@ -120,8 +127,15 @@ export const SupportUs = () => {
             <Link
               to={support.url}
               key={support.id}
+              onClick={() => window.scrollTo(0, 0)}
               className={`
-             ${support.id === 2 ? "hidden lg:block" : support.id === 1 ? "hidden sm:block" : "block"}`}
+             ${
+               support.id === 2
+                 ? "hidden lg:block"
+                 : support.id === 1
+                 ? "hidden sm:block"
+                 : "block"
+             }`}
             >
               <li className="group flex flex-col gap-4 w-[350px] h-[450px] bg-gray-50 rounded-xl overflow-hidden xl:w-[280px] xl:h-[380px] lg:w-[306px] md:w-[280px] sm:max-w-[350px] sm:w-full">
                 <img

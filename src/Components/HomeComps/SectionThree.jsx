@@ -1,8 +1,8 @@
 import { BrandButton } from "../BrandButton";
-import imgOne from "../../assets/Images/SecThree/image-one.jpg";
-import imgTwo from "../../assets/Images/SecThree/image-two.jpg";
-import imgThree from "../../assets/Images/SecThree/image-three.jpg";
-import imgFour from "../../assets/Images/SecThree/image-four.jpg";
+import imgOne from "../../assets/Images/SecTwo/one.jpg";
+import imgTwo from "../../assets/Images/SecTwo/two.jpg";
+import imgThree from "../../assets/Images/SecTwo/three.jpg";
+import imgFour from "../../assets/Images/SecTwo/four.jpg";
 
 export const SectionThree = () => {
     const stories = [
@@ -60,7 +60,7 @@ export const SectionThree = () => {
                                 </svg>
                             </p>
                         </button>
-                        <img src={(story.id === 1) ? imgOne : (story.id === 2) ? imgTwo : (story.id === 3) ? imgThree : imgFour} alt={story.title + "image"} className="absolute top-0 left-0 h-full w-full group-hover:scale-110 transition-all transform duration-300 ease-in-out" />
+                        <img src={(story.id === 1) ? imgOne : (story.id === 2) ? imgTwo : (story.id === 3) ? imgThree : imgFour} alt={story.title + "image"} className="absolute top-0 left-0 h-full object-cover w-full group-hover:scale-110 transition-all transform duration-300 ease-in-out" />
                     </li>
                 ))}
             </ul>
