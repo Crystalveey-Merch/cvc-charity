@@ -42,7 +42,7 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
       </Link>
       <Link
         onClick={handleMenu}
-        to="/volunteer"
+        to="/support-us/volunteer"
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >
         <p className="text-black font-semibold text-sm capitalize">

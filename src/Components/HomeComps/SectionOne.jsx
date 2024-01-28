@@ -6,9 +6,9 @@ export const SectionOne = () => {
   const supports = [
     {
       id: 1,
-      title: "Our mode",
+      title: "Our Mission",
       description:
-        "Our mode of operation is deeply rooted in compassion and care. We embrace a flexible and empathetic approach to ensure we can assist those in need during their most challenging times.",
+        "Our mission at Cvc charity is to alleviate poverty and improve the quality of life by providing access to education, healthcare, and sustainable livelihood opportunities.",
       image: imgThree,
     },
     {

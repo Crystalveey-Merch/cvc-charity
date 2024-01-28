@@ -38,11 +38,12 @@ export const Contact = () => {
       
       const message = await window.Email.send({
         Host: "smtp.elasticemail.com",
-        Username: "muzardemoses@gmail.com",
-        Password: "C904905EA92AFC0DAE0021AD9365D7665E6F",
+        Username: "bookings@crystalveey.com",
+        Password: "EEBBE7E65358FB97956CFA9493251DCFE2D4",
         To: "muzardemoses@gmail.com",
-        From: "info@mosesadebayo.me",
-        Subject: "Contact Form Submission",
+        // From: "Explore Crystalveey <SUPPORT@crystalveey.com>",
+        From: "SUPPORT@crystalveey.com",
+        Subject: "My account not suspended!",
         Body: emailBody,
       });
 

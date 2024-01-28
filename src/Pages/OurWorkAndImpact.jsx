@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { BrandButton } from "../Components";
 import bgImg from "../assets/Images/ourWork/work-and-impact-kids.jpg";
 
 export const OurWorkAndImpact = () => {
@@ -67,9 +69,9 @@ export const OurWorkAndImpact = () => {
           {/* short escription */}
           <p className="text-left text-lg font-normal leading-relaxed text-gray-700 md:text-base">
             <span>
-              At CVC charity, our mission is to create lasting positive
-              impact in communities. We collaborate closely with local partners
-              to design and implement sustainable, community-led projects that
+              At CVC charity, our mission is to create lasting positive impact
+              in communities. We collaborate closely with local partners to
+              design and implement sustainable, community-led projects that
               address the unique challenges faced by children and young people
               living in poverty.
             </span>
@@ -95,7 +97,7 @@ export const OurWorkAndImpact = () => {
         </div>
         <div className="flex flex-col gap-3">
           <h4 className="text-left text-2xl font-bold text-black uppercase sm:text-xl">
-          Our impact in numbers
+            Our impact in numbers
           </h4>
           {/* short escription */}
           <p className="text-left text-lg font-normal leading-relaxed text-gray-700 md:text-base">
@@ -125,6 +127,50 @@ export const OurWorkAndImpact = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="py-3 flex flex-col gap-3">
+          <p className="text-left text-lg font-normal leading-relaxed text-gray-700 md:text-base">
+            <span>
+              We are proud of our achievements to date and are committed to
+              continuing to make a positive impact in the communities we serve.
+            </span>
+            <br />
+            <br />
+            <span>
+              We are grateful to our donors and partners for their continued
+              support. Together, we can create a better future for children and
+              young people around the world.
+            </span>
+          </p>
+          <p className="text-left text-lg font-normal leading-relaxed text-gray-700 md:text-base">
+            Help us to make a difference. Donate today.
+          </p>
+          <Link to={"/support-us/donate"} onClick={() => window.scrollTo(0, 0)}>
+            <BrandButton
+              label={
+                <div className="flex items-center gap-2 justify-between">
+                  <p className="text-white">Donate now</p>
+                  <p className="text-white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </p>
+                </div>
+              }
+              className="rounded-none w-max bg-orange-600 py-3 px-6 xl:py-2"
+            />
+          </Link>
         </div>
       </div>
     </div>
