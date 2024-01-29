@@ -51,14 +51,14 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
       </Link>
       <Link
         onClick={handleMenu}
-        to="/fundraise"
+        to="/support-us/fundraise"
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >
         <p className="text-black font-semibold text-sm capitalize">Fundraise</p>
       </Link>
       <Link
         onClick={handleMenu}
-        to="/partnerships"
+        to="/support-us/partner"
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >
         <p className="text-black font-semibold text-sm capitalize">
@@ -67,7 +67,7 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
       </Link>
       <Link
         onClick={handleMenu}
-        to="/trusts"
+        to="/support-us/trusts"
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >
         <p className="text-black font-semibold text-sm capitalize">Trusts</p>
