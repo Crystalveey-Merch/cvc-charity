@@ -307,6 +307,37 @@ export const Header = (isFixed, setIsFixed) => {
                     />
                   </svg>
                 </Link>
+                <Link
+                  to="/support-us/donate-items"
+                  onClick={() => {
+                    setSupportOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
+                  className="group flex gap-1 items-center transition duration-500 ease-in-out text-orange-700"
+                >
+                  <p className="text-[#000000] text-lg font-semibold group-hover:text-orange-700 lg:text-base">
+                    Donate Items
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={3.5}
+                    stroke="currentColor"
+                    className="opacity-0 group-hover:opacity-100 w-4 h-4 pt-0.5 transition duration-100 ease-in-out"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </Link>
               </div>
             </div>
           </div>

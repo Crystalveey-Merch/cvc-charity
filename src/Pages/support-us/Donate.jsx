@@ -4,6 +4,7 @@ import { Element } from "react-scroll";
 import { BrandButton } from "../../Components";
 import { CheckOut } from "../CheckOut";
 import bgImg from "../../assets/Images/Donate/index.jpg";
+import { Link } from "react-router-dom";
 
 export const Donate = () => {
   const [donateType, setDonateType] = useState("one-off");
@@ -124,15 +125,25 @@ export const Donate = () => {
       </div>
 
       <div className="py-14 px-24 w-full flex flex-col gap-10 items-center justify-center text-center xl:px-10 lg:py-5 md:px-8 sm:px-4">
-        <p
+        <div
           className="text-left text-lg font-normal w-[850px] inline-flex flex-col gap-3 lg:w-full md:text-base"
           style={{ lineHeight: "1.9" }}
         >
-          We&rsquo;ve been helping young people for over 9 years. But we
-          can&rsquo;t do it alone. We need your support. Thank you for choosing
-          to support us. Your donation will help us be there for children who
-          feel they have no one else to turn to.
-        </p>
+          <p>
+            We&rsquo;ve been helping young people for over 9 years. But we
+            can&rsquo;t do it alone. We need your support. Thank you for
+            choosing to support us. Your donation will help us be there for
+            children who feel they have no one else to turn to.
+          </p>
+
+          <p>
+            If you&rsquo;re looking to donate items, please visit our{" "}
+            <Link to="/support-us/donate-items" className="text-orange-600">
+              donate items page
+            </Link>{" "}
+            for more information.
+          </p>
+        </div>
         <Element name="donate" className="flex flex-col justify-center">
           {/* <div className="flex place-self-center w-[80vw]">
             <div className="bg-orange-600 text-white flex flex-col gap-5 w-1/2 p-8">

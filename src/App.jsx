@@ -3,7 +3,7 @@ import { Header, Footer } from "./Components";
 import { Home, SupportUs, OurWorkAndImpact } from "./Pages";
 import { Contact } from "./Pages/Contact";
 import { Contact2 } from "./Pages/Contact2";
-import { Donate, Volunteer, PatnerWithUs, FundRaise, Trusts } from "./Pages/support-us";
+import { Donate, Volunteer, PatnerWithUs, FundRaise, DonateItems, Trusts } from "./Pages/support-us";
 import "./App.css";
 import { useState } from "react";
 import { SubscribeSec } from "./Components/HomeComps/SubscribeSec";
@@ -21,6 +21,7 @@ function App() {
           <Route path="/support-us/volunteer" element={<Volunteer />} />
           <Route path="/support-us/partner-with-us" element={<PatnerWithUs />} />
           <Route path="/support-us/fundraise" element={<FundRaise />} />
+          <Route path="/support-us/donate-items" element={<DonateItems />} />
           <Route path="/support-us/trusts" element={<Trusts />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact2" element={<Contact2 />} />

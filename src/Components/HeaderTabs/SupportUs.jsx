@@ -90,6 +90,18 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
       >
         <p className="text-black font-semibold text-sm capitalize">Trusts</p>
       </Link>
+      <Link
+        onClick={() => {
+          handleMenu();
+          window.scrollTo(0, 0);
+        }}
+        to="/support-us/donate-items"
+        className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
+      >
+        <p className="text-black font-semibold text-sm capitalize">
+          Donate Items
+        </p>
+      </Link>
     </div>
   );
 };
