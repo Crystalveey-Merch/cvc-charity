@@ -25,14 +25,20 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
         <p className="text-[#000] font-semibold text-sm capitalize">Go Back</p>
       </button>
       <Link
-        onClick={handleMenu}
+        onClick={() => {
+          handleMenu();
+          window.scrollTo(0, 0);
+        }}
         to="/support-us"
         className="flex justify-between pb-2 py-2 border-b-2 border-gray-300"
       >
         <p className="text-black font-bold text-base capitalize">Support Us</p>
       </Link>
       <Link
-        onClick={handleMenu}
+        onClick={() => {
+          handleMenu();
+          window.scrollTo(0, 0);
+        }}
         to="/support-us/donate"
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >
@@ -41,7 +47,10 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
         </p>
       </Link>
       <Link
-        onClick={handleMenu}
+        onClick={() => {
+          handleMenu();
+          window.scrollTo(0, 0);
+        }}
         to="/support-us/volunteer"
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >
@@ -50,15 +59,21 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
         </p>
       </Link>
       <Link
-        onClick={handleMenu}
+        onClick={() => {
+          handleMenu();
+          window.scrollTo(0, 0);
+        }}
         to="/support-us/fundraise"
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >
         <p className="text-black font-semibold text-sm capitalize">Fundraise</p>
       </Link>
       <Link
-        onClick={handleMenu}
-        to="/support-us/partner"
+        onClick={() => {
+          handleMenu();
+          window.scrollTo(0, 0);
+        }}
+        to="/support-us/partner-with-us"
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >
         <p className="text-black font-semibold text-sm capitalize">
@@ -66,7 +81,10 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
         </p>
       </Link>
       <Link
-        onClick={handleMenu}
+        onClick={() => {
+          handleMenu();
+          window.scrollTo(0, 0);
+        }}
         to="/support-us/trusts"
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >

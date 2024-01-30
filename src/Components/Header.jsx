@@ -126,7 +126,10 @@ export const Header = (isFixed, setIsFixed) => {
             >
               <Link
                 to="/support-us"
-                onClick={() => setSupportOpen(false)}
+                onClick={() => {
+                  setSupportOpen(false);
+                  window.scrollTo(0, 0);
+                }}
                 className="group flex gap-1.5 items-center text-[#000000] transition duration-500 ease-in-out hover:text-orange-700"
               >
                 <h4 className="font-bold text-4xl lg:text-2xl lg:w-max">
@@ -151,6 +154,10 @@ export const Header = (isFixed, setIsFixed) => {
               <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-16 xl:gap-y-6 xl:gap-x-8 lg:flex lg:flex-wrap">
                 <Link
                   to="/support-us/donate"
+                  onClick={() => {
+                    setSupportOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
                   className="group flex gap-1 items-center transition duration-500 ease-in-out text-orange-700"
                 >
                   <p className="text-[#000000] text-lg font-semibold group-hover:text-orange-700 lg:text-base">
@@ -178,6 +185,10 @@ export const Header = (isFixed, setIsFixed) => {
                 </Link>
                 <Link
                   to="/support-us/volunteer"
+                  onClick={() => {
+                    setSupportOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
                   className="group flex gap-1 items-center transition duration-500 ease-in-out text-orange-700"
                 >
                   <p className="text-[#000000] text-lg font-semibold group-hover:text-orange-700 lg:text-base">
@@ -204,7 +215,11 @@ export const Header = (isFixed, setIsFixed) => {
                   </svg>
                 </Link>
                 <Link
-                  href="/support/fundraise"
+                  to="/support-us/fundraise"
+                  onClick={() => {
+                    setSupportOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
                   className="group flex gap-1 items-center transition duration-500 ease-in-out text-orange-700"
                 >
                   <p className="text-[#000000] text-lg font-semibold group-hover:text-orange-700 lg:text-base">
@@ -231,7 +246,11 @@ export const Header = (isFixed, setIsFixed) => {
                   </svg>
                 </Link>
                 <Link
-                  to="/support-us/patner-with-us"
+                  to="/support-us/partner-with-us"
+                  onClick={() => {
+                    setSupportOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
                   className="group flex gap-1 items-center transition duration-500 ease-in-out text-orange-700"
                 >
                   <p className="text-[#000000] text-lg font-semibold group-hover:text-orange-700 lg:text-base">
@@ -258,7 +277,11 @@ export const Header = (isFixed, setIsFixed) => {
                   </svg>
                 </Link>
                 <Link
-                  href="/support/trusts"
+                  to="/support-us/trusts"
+                  onClick={() => {
+                    setSupportOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
                   className="group flex gap-1 items-center transition duration-500 ease-in-out text-orange-700"
                 >
                   <p className="text-[#000000] text-lg font-semibold group-hover:text-orange-700 lg:text-base">

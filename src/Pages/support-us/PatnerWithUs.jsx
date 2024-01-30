@@ -87,7 +87,7 @@ export const PatnerWithUs = () => {
         </div>
       </div>
       <div className="bg-white text-left py-14 px-24 w-full flex flex-col gap-10 items-center justify-center xl:px-10 lg:py-5 md:px-8 sm:px-4">
-        <div className="flex flex-col gap-2 w-[1100px] lg:w-full">
+        <div className="flex flex-col gap-2 w-[1100px] xl:w-[980px] lg:w-full">
           <p
             className="text-left text-lg font-normal inline-flex flex-col gap-2 md:text-base"
             style={{ lineHeight: "1.6" }}
@@ -106,10 +106,10 @@ export const PatnerWithUs = () => {
             </span>
           </p>
         </div>
-        <div className="w-[1100px] flex flex-col justify-start gap-8 lg:w-full mt-10">
+        <div className="w-[1100px] flex flex-col justify-start gap-8 xl:w-[980px] lg:w-full mt-10">
           {" "}
           {/* Added top margin */}
-          <h2 className="text-left text-2xl font-bold">
+          <h2 className="text-left text-2xl font-bold sm:text-xl">
             Why partner with us?
           </h2>{" "}
           {/* Added bottom margin */}
@@ -166,7 +166,7 @@ export const PatnerWithUs = () => {
             </li>
           </ul>
         </div>
-        <form className="flex flex-col gap-8 w-[1100px] lg:w-full">
+        <form className="flex flex-col gap-8 w-[1100px] xl:w-[980px] lg:w-full">
           <h2 className="text-left text-2xl font-bold sm:text-xl">Patnership Form</h2>
           <div className="flex flex-col gap-4 sm:gap-5">
             <h4 className="w-max text-left text-xl font-semibold pb-2 border-b border-black mb-1 sm:text-lg">

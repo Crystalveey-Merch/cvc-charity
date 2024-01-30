@@ -38,7 +38,7 @@ export const SupportUs = () => {
       description:
         "Your business can help us make a difference. Become a corporate partner today.",
       img: imgFour,
-      url: "/support-us/partnerships",
+      url: "/support-us/partner-with-us",
     },
     {
       id: 5,
