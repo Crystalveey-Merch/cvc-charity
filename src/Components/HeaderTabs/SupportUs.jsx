@@ -80,7 +80,7 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
           Patner with us
         </p>
       </Link>
-      <Link
+      {/* <Link
         onClick={() => {
           handleMenu();
           window.scrollTo(0, 0);
@@ -89,7 +89,7 @@ export const SupportUs = ({ handleMenu, setCurrentTab }) => {
         className="flex justify-between pb-2 py-1.5 border-b-2 border-gray-300"
       >
         <p className="text-black font-semibold text-sm capitalize">Trusts</p>
-      </Link>
+      </Link> */}
       <Link
         onClick={() => {
           handleMenu();

@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./Components";
-import { Home, SupportUs, OurWorkAndImpact } from "./Pages";
+import { Home, About ,SupportUs, OurWorkAndImpact } from "./Pages";
 import { Contact } from "./Pages/Contact";
 import { Contact2 } from "./Pages/Contact2";
 import { Donate, Volunteer, PatnerWithUs, FundRaise, DonateItems, Trusts } from "./Pages/support-us";
@@ -16,6 +16,7 @@ function App() {
       <div className={` ${isFixed ? "mt-44" : ""}`}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/support-us" element={<SupportUs />} />
           <Route path="/support-us/donate" element={<Donate />} />
           <Route path="/support-us/volunteer" element={<Volunteer />} />

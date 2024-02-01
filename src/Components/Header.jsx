@@ -75,17 +75,25 @@ export const Header = (isFixed, setIsFixed) => {
         <Link
           to="/"
           // scroll to top
-          onClick={() => window.scrollTo(0, 0)}
+          onClick={() => {
+            setSupportOpen(false);
+            window.scrollTo(0, 0);
+          }}
           className="font-bold text-3xl text-orange-800 xl:text-2xl lg:text-xl"
         >
           CVC Charity
         </Link>
       </div>
       <ul className="flex gap-6 xl:gap-5 lg:gap-3.5 md:hidden">
-        <Link to={"/our-work-and-impact"} onClick={() => window.scrollTo(0, 0)}>
-          <li className="text-[#000000] font-semibold text-base capitalize xl:text-sm lg:text-xs">
-            Our work and impact
-          </li>
+        <Link
+          to={"/our-work-and-impact"}
+          className="text-[#000000] font-semibold text-base capitalize xl:text-sm lg:text-xs hover:text-orange-800 transition duration-500 ease-in-out"
+          onClick={() => {
+            setSupportOpen(false);
+            window.scrollTo(0, 0);
+          }}
+        >
+          Our work and impact
         </Link>
         <li className="text-[#000000] font-semibold text-base capitalize xl:text-sm lg:text-xs">
           How we can help
@@ -276,7 +284,7 @@ export const Header = (isFixed, setIsFixed) => {
                     />
                   </svg>
                 </Link>
-                <Link
+                {/* <Link
                   to="/support-us/trusts"
                   onClick={() => {
                     setSupportOpen(false);
@@ -306,7 +314,7 @@ export const Header = (isFixed, setIsFixed) => {
                       d="M8.25 4.5l7.5 7.5-7.5 7.5"
                     />
                   </svg>
-                </Link>
+                </Link> */}
                 <Link
                   to="/support-us/donate-items"
                   onClick={() => {
@@ -342,9 +350,16 @@ export const Header = (isFixed, setIsFixed) => {
             </div>
           </div>
         </li>
-        <li className="text-[#000000] font-semibold text-base capitalize xl:text-sm lg:text-xs">
-          about us
-        </li>
+        <Link
+          to="/about"
+          onClick={() => {
+            setSupportOpen(false);
+            window.scrollTo(0, 0);
+          }}
+          className="text-[#000000] font-semibold text-base capitalize xl:text-sm lg:text-xs hover:text-orange-800 transition duration-500 ease-in-out"
+        >
+          About us
+        </Link>
       </ul>
       <div className="flex gap-10 items-center">
         <Link to="/support-us/donate">
